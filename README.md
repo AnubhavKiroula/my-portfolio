@@ -1,6 +1,6 @@
-# 🚀 Archit Mittal's - 3D Portfolio
+# 🚀 Anubhav Kiroula's - 3D Portfolio
 
-A modern, interactive developer portfolio featuring 3D animations, smooth transitions, and a space-themed aesthetic. Built with Next.js, featuring an interactive 3D keyboard where each keycap represents a skill.
+A modern, interactive developer portfolio website showcasing my skills as an AI/ML Engineer and Full Stack Developer. Built with Next.js, featuring an interactive 3D keyboard where each keycap represents a skill.
 
 ## ✨ Features
 
@@ -28,21 +28,21 @@ A modern, interactive developer portfolio featuring 3D animations, smooth transi
 ### Prerequisites
 
 - Node.js (v18+)
-- npm or yarn
+- pnpm, npm or yarn
 
 ### Installation
 
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/archittmittal/3d-portfolio.git
-    cd 3d-portfolio
+    git clone https://github.com/AnubhavKiroula/portfolio-website.git
+    cd portfolio-website
     ```
 
 2. **Install dependencies:**
 
     ```bash
-    npm install
+    pnpm install
     ```
 
 3. **Set up environment variables:**
@@ -60,7 +60,7 @@ A modern, interactive developer portfolio featuring 3D animations, smooth transi
 4. **Run the development server:**
 
     ```bash
-    npm run dev
+    pnpm run dev
     ```
 
 5. Open [http://localhost:3000](http://localhost:3000)
@@ -69,27 +69,28 @@ A modern, interactive developer portfolio featuring 3D animations, smooth transi
 
 ## 👨‍💻 About Me
 
-I'm Archit Mittal, a full-stack developer and tech enthusiast. Currently:
+I'm Anubhav Kiroula, an AI/ML Engineer and Full Stack Developer. Currently:
 
-- **Senior Manager – iGV** at AIESEC (Aug 2025 – Feb 2026)
-- **Senior Manager – Business Development** at AIESEC (Feb 2025 – July 2025)
-- **Active Open Source Contributor** across web, ML, DevOps & sustainability
-- **IEEE Student Member** – Spokesperson & Tech Team
+- **Core Member** at FOSS Club (May 2026 – Present)
+- **Technical Team Member** at Team Aryavart (Aug 2025 – May 2026)
+- **B.Tech CSE Specializing in AI/ML** at Graphic Era Hill University (graduating in 2028)
+
+## 📁 Projects Showcase
+
+1. **Smart Library Management System** — Node.js, TypeScript, Flutter, PostgreSQL, Docker (Feb 2026)
+2. **Intelligent Data Cleaning Platform** — Python, FastAPI, React, TypeScript, HuggingFace, Docker, CI/CD (Apr 2026)
+3. **Stock Price Prediction System** — Python, Scikit-learn, NumPy, Pandas, Financial APIs (Nov 2024)
+4. **AI Agent with CrewAI** — Python, CrewAI, real-time workflow monitoring (2024)
 
 ## 📫 Connect
 
-- **Email:** work.architmittal@gmail.com
-- **LinkedIn:** [archit-mittal-010638305](https://www.linkedin.com/in/archit-mittal-010638305/)
-- **GitHub:** [archittmittal](https://github.com/archittmittal)
-- **Twitter:** [@archittmittal](https://x.com/archittmittal)
-- **Instagram:** [@archittmittal](https://www.instagram.com/archittmittal)
+- **Email:** anubhavkiroula1@gmail.com
+- **LinkedIn:** [Anubhav Kiroula](https://www.linkedin.com/in/anubhav-kiroula-109641376)
+- **GitHub:** [AnubhavKiroula](https://github.com/AnubhavKiroula)
+- **Twitter/X:** [@AnubhavKiroula](https://x.com/AnubhavKiroula)
 
 ---
 
 ## 🚀 Deployment
 
 Deployed on **Vercel**. Push to main for automatic deployments.
-
----
-
-

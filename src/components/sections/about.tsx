@@ -12,25 +12,25 @@ const ABOUT_CONTENT = [
     icon: GraduationCap,
     title: "Education",
     content:
-      "B.Tech Computer Science and Engineering student at Graphic Era Hill University, graduating in 2028. Focus on software development, open source contribution, and research driven problem solving.",
+      "B.Tech Computer Science and Engineering student at Graphic Era Hill University, Dehradun, graduating in 2028. Specializing in Artificial Intelligence and Machine Learning.",
   },
   {
     icon: Users,
-    title: "Leadership",
+    title: "Leadership & Clubs",
     content:
-      "Completed leadership tenure with AIESEC in India as Senior Manager Incoming Social Sector. Worked on social impact initiatives, partnerships, and project execution.",
+      "Core Member of the FOSS (Free and Open Source Software) Club at GEHU, organizing workshops and promoting open source contributions.",
   },
   {
     icon: Lightbulb,
     title: "Community",
     content:
-      "Active member of the IEEE Student Branch at GEHU, participating in technical and research oriented activities.",
+      "Active member of Team Aryavart technical team, collaborating on web projects and managing community event logistics.",
   },
   {
     icon: Code2,
-    title: "Open Source",
+    title: "Open Source & Tech",
     content:
-      "Contributes to open source projects and builds practical software solutions that address real problems. Interests include scalable systems, collaborative development, and technology driven innovation.",
+      "Passionate about building intelligent systems, full-stack web applications, and contributing to FOSS projects. Always eager to solve real-world problems through clean code.",
   },
 ];
 

@@ -1,42 +1,43 @@
 const config = {
-  title: "Archit Mittal | Full-Stack Developer",
+  title: "Anubhav Kiroula | AI/ML & Full Stack Developer",
   description: {
-    long: "Explore the portfolio of Archit Mittal, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Let's build something amazing together!",
+    long: "Explore the portfolio of Anubhav Kiroula—an AI/ML Engineer and Full Stack Developer focused on building intelligent, real-world applications with clean architecture. Let's build something amazing together!",
     short:
-      "Discover the portfolio of Archit Mittal, a full-stack developer creating interactive web experiences and innovative projects.",
+      "Discover the portfolio of Anubhav Kiroula—an AI/ML Engineer and Full Stack Developer building intelligent, real-world applications.",
   },
   keywords: [
-    "Archit Mittal",
+    "Anubhav Kiroula",
     "portfolio",
-    "full-stack developer",
-    "creative technologist",
+    "AI/ML Engineer",
+    "Full Stack Developer",
     "web development",
-    "3D animations",
-    "interactive websites",
-    "web design",
-    "GSAP",
     "React",
     "Next.js",
-    "Spline",
-    "Framer Motion",
+    "FastAPI",
+    "Python",
+    "HuggingFace",
+    "Docker",
+    "Supabase",
   ],
-  author: "Archit Mittal",
-  email: "work.architmittal@gmail.com",
-  site: "https://architmittal.com",
+  author: "Anubhav Kiroula",
+  email: "anubhavkiroula1@gmail.com",
+  site: "",
 
   // for github stars button
-  githubUsername: "archittmittal",
-  githubRepo: "3d-portfolio",
+  githubUsername: "AnubhavKiroula",
+  githubRepo: "portfolio-website",
+
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/archittmittal",
-    linkedin: "https://www.linkedin.com/in/archit-mittal-010638305/",
-    instagram: "https://www.instagram.com/archittmittal",
+    twitter: "https://x.com/AnubhavKiroula",
+    linkedin:
+      "https://www.linkedin.com/in/anubhav-kiroula-109641376",
+    instagram: "https://www.instagram.com/anubhav_kiroula?igsh=dnZtbHU3dGxrYjdu",
     facebook: "",
-    github: "https://github.com/archittmittal",
+    github: "https://github.com/AnubhavKiroula",
   },
 };
 export { config };
