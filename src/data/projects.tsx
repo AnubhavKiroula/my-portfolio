@@ -302,7 +302,7 @@ const projects: Project[] = [
     id: "smart-library",
     category: "IoT / Full Stack",
     title: "Smart Library Management System",
-    src: "/assets/projects-screenshots/patient-appointment-scheduling/landing.png",
+    src: "/assets/projects-screenshots/smart-library.png",
     screenshots: ["landing.png"],
     skills: {
       frontend: [
@@ -319,7 +319,7 @@ const projects: Project[] = [
       ],
     },
     live: "#",
-    github: "https://github.com/AnubhavKiroula",
+    github: "https://github.com/AnubhavKiroula/Smart-Library",
     get content() {
       return (
         <div>
@@ -356,7 +356,7 @@ const projects: Project[] = [
     id: "data-cleaning-platform",
     category: "AI / Machine Learning",
     title: "Intelligent Data Cleaning Platform",
-    src: "/assets/projects-screenshots/traffic-ai/landing.png",
+    src: "/assets/projects-screenshots/data-cleaning.png",
     screenshots: ["landing.png"],
     skills: {
       frontend: [
@@ -372,7 +372,7 @@ const projects: Project[] = [
       ],
     },
     live: "#",
-    github: "https://github.com/AnubhavKiroula",
+    github: "https://github.com/AnubhavKiroula/data-cleaning-openenv",
     get content() {
       return (
         <div>
@@ -409,7 +409,7 @@ const projects: Project[] = [
     id: "stock-prediction",
     category: "AI / Finance",
     title: "Stock Price Prediction System",
-    src: "/assets/projects-screenshots/astramed/landing.png",
+    src: "/assets/projects-screenshots/stock-prediction.png",
     screenshots: ["landing.png"],
     skills: {
       frontend: [
@@ -452,7 +452,7 @@ const projects: Project[] = [
     id: "crewai-agent",
     category: "AI / Automation",
     title: "AI Agent with CrewAI",
-    src: "/assets/projects-screenshots/eco-vyapaar/landing.png",
+    src: "/assets/projects-screenshots/crewai-agent.png",
     screenshots: ["landing.png"],
     skills: {
       frontend: [
