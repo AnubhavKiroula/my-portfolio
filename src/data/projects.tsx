@@ -34,6 +34,9 @@ import {
   SiFlutter,
   SiHuggingface,
   SiScikitlearn,
+  SiRedis,
+  SiPrometheus,
+  SiNodedotjs,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { TbBrandFramerMotion } from "react-icons/tb";
@@ -171,6 +174,18 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiFirebase />,
   },
+  redis: {
+    title: "Redis (In-Memory Store)",
+    bg: "black",
+    fg: "white",
+    icon: <SiRedis />,
+  },
+  prometheus: {
+    title: "Prometheus (Metrics)",
+    bg: "black",
+    fg: "white",
+    icon: <SiPrometheus />,
+  },
   sockerio: {
     title: "Socket.io (Real-time events)",
     bg: "black",
@@ -284,6 +299,24 @@ const PROJECT_SKILLS = {
     bg: "black",
     fg: "white",
     icon: <SiScikitlearn />,
+  },
+  redis: {
+    title: "Redis (In-Memory Store)",
+    bg: "black",
+    fg: "white",
+    icon: <SiRedis />,
+  },
+  prometheus: {
+    title: "Prometheus (Metrics)",
+    bg: "black",
+    fg: "white",
+    icon: <SiPrometheus />,
+  },
+  node: {
+    title: "Node.js (Async Backend)",
+    bg: "black",
+    fg: "white",
+    icon: <SiNodedotjs />,
   },
 };
 export type Project = {
@@ -449,42 +482,102 @@ const projects: Project[] = [
     },
   },
   {
-    id: "crewai-agent",
-    category: "AI / Automation",
-    title: "AI Agent with CrewAI",
-    src: "/assets/projects-screenshots/crewai-agent.png",
+    id: "token-bucket",
+    category: "Backend / Systems",
+    title: "Token Bucket Rate Limiter Service",
+    src: "/assets/projects-screenshots/token-bucket.png",
     screenshots: ["landing.png"],
     skills: {
       frontend: [
-        PROJECT_SKILLS.js,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
       ],
       backend: [
-        PROJECT_SKILLS.python,
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.redis,
+        PROJECT_SKILLS.docker,
+        PROJECT_SKILLS.prometheus,
       ],
     },
-    live: "https://ai-agent-crewai.netlify.app/",
-    github: "https://github.com/AnubhavKiroula",
+    live: "#",
+    github: "https://github.com/AnubhavKiroula/token-bucket-rate-limiter-service",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono text-2xl text-center">
-            Multi-Agent Workflows & CrewAI Orchestration
+            Distributed Rate Limiting with Atomic Redis Lua Scripting
           </TypographyP>
           <TypographyP className="font-mono">
-            An automated project management system leveraging CrewAI to delegate, orchestrate, and log AI workflows in real time.
+            A production-grade distributed Token Bucket Rate Limiter Service built in Node.js/TypeScript. Uses atomic Redis Lua scripting to prevent race conditions across multi-instance load-balanced nodes.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <TypographyH3 className="my-4 mt-8">
-            Intelligent Task Delegation
+            Atomic Redis Lua Scripting
           </TypographyH3>
           <p className="font-mono mb-2">
-            Configures specialized agents with structured roles, tools, and objectives to collaboratively solve design, research, and coding tasks.
+            Prevents race conditions in multi-instance deployments using server-side Lua scripts that execute atomically on Redis, ensuring thread-safe token bucket operations even under high concurrency.
           </p>
           <TypographyH3 className="my-4 mt-8">
-            Real-time Logging & Monitoring
+            Glassmorphic Observability Dashboard
           </TypographyH3>
           <p className="font-mono mb-2">
-            Provides complete transparency into agent decision trajectories with detailed streaming logs and intermediate outputs.
+            Real-time dashboard visualizing request throughput, bucket refill rates, and per-client quota usage. Powered by Prometheus metrics exporter for seamless integration with monitoring stacks.
+          </p>
+          <TypographyH3 className="my-4 mt-8">
+            Load-Balanced Multi-Instance Support
+          </TypographyH3>
+          <p className="font-mono mb-2">
+            Designed to scale horizontally across multiple Node.js instances behind a load balancer, with Redis as the shared state layer ensuring consistent rate enforcement cluster-wide.
+          </p>
+        </div>
+      );
+    },
+  },
+  {
+    id: "docmind",
+    category: "AI / RAG",
+    title: "DocMind — RAG Chatbot",
+    src: "/assets/projects-screenshots/docmind.png",
+    screenshots: ["landing.png"],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.python,
+      ],
+      backend: [
+        PROJECT_SKILLS.huggingface,
+        PROJECT_SKILLS.docker,
+      ],
+    },
+    live: "#",
+    github: "https://github.com/AnubhavKiroula/docmind-rag-chatbot",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            🧠 Chat with Your Documents using RAG
+          </TypographyP>
+          <TypographyP className="font-mono">
+            A Retrieval-Augmented Generation (RAG) chatbot that lets you upload documents and chat with them in natural language. Built with LlamaIndex, Qdrant, and Ollama/Groq — created as part of the FOSS Club AI/ML role showcase.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <TypographyH3 className="my-4 mt-8">
+            LlamaIndex + Qdrant RAG Pipeline
+          </TypographyH3>
+          <p className="font-mono mb-2">
+            Implements a full RAG pipeline using LlamaIndex for document ingestion and query orchestration, with Qdrant as the vector store for fast semantic similarity search over uploaded documents.
+          </p>
+          <TypographyH3 className="my-4 mt-8">
+            Ollama & Groq LLM Backends
+          </TypographyH3>
+          <p className="font-mono mb-2">
+            Supports dual LLM backends: Ollama for fully local, privacy-preserving inference, and Groq for blazing-fast cloud inference — switchable via configuration.
+          </p>
+          <TypographyH3 className="my-4 mt-8">
+            FOSS Club AI/ML Contribution
+          </TypographyH3>
+          <p className="font-mono mb-2">
+            Built as a demonstration project for the FOSS Club AI/ML role at GEHU Dehradun, showcasing practical applications of open-source LLMs and vector databases.
           </p>
         </div>
       );
