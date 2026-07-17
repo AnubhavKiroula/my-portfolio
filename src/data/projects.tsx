@@ -36,7 +36,6 @@ import {
   SiScikitlearn,
   SiRedis,
   SiPrometheus,
-  SiNodedotjs,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { TbBrandFramerMotion } from "react-icons/tb";
@@ -300,24 +299,7 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiScikitlearn />,
   },
-  redis: {
-    title: "Redis (In-Memory Store)",
-    bg: "black",
-    fg: "white",
-    icon: <SiRedis />,
-  },
-  prometheus: {
-    title: "Prometheus (Metrics)",
-    bg: "black",
-    fg: "white",
-    icon: <SiPrometheus />,
-  },
-  node: {
-    title: "Node.js (Async Backend)",
-    bg: "black",
-    fg: "white",
-    icon: <SiNodedotjs />,
-  },
+
 };
 export type Project = {
   id: string;
