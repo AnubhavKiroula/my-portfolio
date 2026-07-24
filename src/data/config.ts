@@ -21,11 +21,11 @@ const config = {
   ],
   author: "Anubhav Kiroula",
   email: "anubhavkiroula1@gmail.com",
-  site: "",
+  site: "https://anubhavkiroula.vercel.app",
 
   // for github stars button
   githubUsername: "AnubhavKiroula",
-  githubRepo: "portfolio-website",
+  githubRepo: "my-portfolio",
 
 
   get ogImg() {
