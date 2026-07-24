@@ -264,12 +264,12 @@ const AnimatedBackground = () => {
 
     keycaps.forEach(async (keycap, idx) => {
       keycap.visible = false;
-      await sleep(idx * 70);
+      await sleep(idx * 80);
       keycap.visible = true;
       gsap.fromTo(
         keycap.position,
-        { y: 200 },
-        { y: 50, duration: 0.5, delay: 0.1, ease: "bounce.out" }
+        { y: 400 },
+        { y: 0, duration: 0.7, delay: 0.05, ease: "bounce.out" }
       );
     });
   };
