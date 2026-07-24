@@ -377,7 +377,7 @@ const AnimatedBackground = () => {
       }
 
       // Handle Rotate/Teardown Tweens
-      if (activeSection === "hero") {
+      if (activeSection === "hero" || activeSection === "skills") {
         rotateKeyboard?.restart();
         teardownKeyboard?.pause();
       } else if (activeSection === "contact") {
