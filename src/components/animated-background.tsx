@@ -396,15 +396,20 @@ const AnimatedBackground = () => {
         bongoAnimationRef.current?.stop();
       }
 
-      // Handle Contact Section Animations
+      // Handle Keycap Float Animation (skills + contact)
+      if (activeSection === "skills" || activeSection === "contact") {
+        await sleep(400);
+        keycapAnimationsRef.current?.start();
+      } else {
+        keycapAnimationsRef.current?.stop();
+      }
+
+      // Handle Contact-specific teardown animation
       if (activeSection === "contact") {
         await sleep(600);
         teardownKeyboard?.restart();
-        keycapAnimationsRef.current?.start();
       } else {
-        await sleep(600);
         teardownKeyboard?.pause();
-        keycapAnimationsRef.current?.stop();
       }
     };
 
