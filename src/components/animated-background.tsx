@@ -194,13 +194,13 @@ const AnimatedBackground = () => {
           const keycap = splineApp.findObjectByName(skill.name);
           if (!keycap) return;
           const t = gsap.to(keycap.position, {
-            y: Math.random() * 200 + 200,
-            duration: Math.random() * 2 + 2,
-            delay: idx * 0.6,
+            y: Math.random() * 180 + 150,
+            duration: Math.random() * 1.5 + 1.5,
+            delay: idx * 0.3,
             repeat: -1,
             yoyo: true,
-            yoyoEase: "none",
-            ease: "elastic.out(1,0.3)",
+            yoyoEase: "power1.inOut",
+            ease: "sine.inOut",
           });
           tweens.push(t);
         });
